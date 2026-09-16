@@ -252,7 +252,7 @@ $q(xz) = q(yz)$), and as a consequence: $M$ either accepts both $xz$ and
 $yz$, or rejects both of them. See @fig-memorylessness for an
 illustration.
 
-::: {figure label=fig-memorylessness width=300px} ./memorylessness.png
+::: {figure label=fig-memorylessness width=400px} memorylessnesstikz.png
 
 Illustration of memorylessness.
 
