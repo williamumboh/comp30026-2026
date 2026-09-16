@@ -2,14 +2,31 @@
 version: 1
 project:
   id: 2fbbf539-66a8-4312-877e-39c49cae9905
-  # title:
+  title: Models of Computation
+  authors:
+    - name: William Umboh
+      affiliations:
+        - institution: The University of Melbourne
+  numbering:
+    prf:proof : false
+  toc:
+    - file: welcome.md
+    - file: background.md
+    - file: nonregularity.md
+      children:
+        - file: foolingsets.md
+
   # description:
   # keywords: []
   # authors: []
-  github: https://github.com/williamumboh/comp30026-2026
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
+  parts:
+    footer: footer.md
+  options:
+    logo_text: COMP90077
+    robots: disallow
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
