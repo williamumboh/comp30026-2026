@@ -58,7 +58,7 @@ closed under. Other operations include:
 2.  concatenation
 3.  Kleene star (aka Kleene closure)
 
-# Fooling sets vs closure properties
+## Fooling sets vs closure properties
 
 Here are the benefits and drawbacks to the two techniques:
 
