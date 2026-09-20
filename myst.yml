@@ -15,6 +15,7 @@ project:
     - file: nonregularity.md
       children:
         - file: foolingsets.md
+        - file: nonreg-closure.md
 
   # description:
   # keywords: []

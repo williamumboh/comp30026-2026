@@ -23,6 +23,6 @@ recognises $L$?
 
 :::
 
-We begin with the fooling set technique, and then we show how to use
-closure properties to leverage the fact that some other language is
-already known to be nonregular.
+We begin with @sec-nonreg-fooling, and then we show how to use
+@sec-nonreg-closure properties to leverage the fact that some other
+language is already known to be nonregular (Week 9).

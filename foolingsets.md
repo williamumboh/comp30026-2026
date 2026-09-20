@@ -145,8 +145,8 @@ single state. The characterization allows us to rule out single-state
 DFAs for some languages $L$: no DFA with 1 state can recongize $L$ if
 $L$ is not the empty language or the language of all strings.
 
-::: {prf:lemma label=lem-nonreg-single} Characterization of languages of
-single-state DFA
+::: {prf:lemma label=lem-nonreg-single} Characterization of single-state
+DFAs
 
 A single-state DFA either accepts every string or rejects every string.
 Consequently, if $L$ is neither the empty language nor the language of
@@ -187,8 +187,7 @@ the **remaining input string, i.e. the suffix**.[^4]
 The below observation also immediately follows from the definition but
 will be important later on.
 
-::: {prf:observation label=obs-nonreg-decomp} Prefix-Suffix
-Decomposition
+::: {prf:observation label=obs-nonreg-decomp}
 
 Let $w$ be an input string, and suppose we decompose $w$ into a prefix
 $x$ and a suffix $y$, i.e. $w = xy$, and let $r = \delta^*(q_0,x)$, i.e.
@@ -399,7 +398,8 @@ DFA, you may find it helpful to run through the argument in the proof on
 a specific nonregular language $L$ and a specific DFA $M$. You should be
 able to get a counterexample for that specific DFA. For example, you can
 take any of the example DFAs, and the language
-$L = \{0^n1^n \mid n \geq 0\}$ and its fooling set given below.
+$L = \{0^n1^n \mid n \geq 0\}$ and its fooling set given below. See
+example in Lecture 17 slides.
 
 :::
 
@@ -444,11 +444,16 @@ There is no sure-fire way of constructing fooling sets for a language
 $L$. Here are some general heuristics to try. Each of these were used
 for the examples and exercises above.
 
-1.  Construct fooling set using prefixes of strings in $L$.
-2.  To construct $F_k$, consider strings for which it seems a counter
+1.  Think about information that you need to keep track of to decide if
+    a string should be accepted or rejected (see Lecture 17 slides for
+    examples)
+2.  Focus on a structured subset of strings (see Lecture 17 slides for
+    an example)
+3.  Construct fooling set using prefixes of strings in $L$.
+4.  To construct $F_k$, consider strings for which it seems a counter
     that can count up to at least $k$ is needed to distinguish between
     them.
-3.  Often, it is possible to construct a fooling set $F_k$ such that for
+5.  Often, it is possible to construct a fooling set $F_k$ such that for
     every string $x \in F_k$, there is a string $z$ such that $z$
     distinguishes $x$ from the other strings in $F_k$, i.e. either $xz$
     is in $L$ but $yz$ is not in $L$ for every other $y$ in $F_k$, or
@@ -515,6 +520,32 @@ Show that for every $k \geq 1$, there exists a fooling set $F(k)$ of
 size at least $k$.
 
 :::
+
+## Proving minimality via fooling sets
+
+The fooling set technique can also be used to prove that a DFA $M$ is
+minimal for a language $L$: if there exists a fooling set $F$ for $L$ of
+size exactly equal to the number of states of $M$, then $M$ is minimal.
+This is interesting as the fooling set $F$ is a **witness** to the
+minimality of $M$.
+
+::: {exercise}
+
+Let $L$ be the language of even-length bit strings. Give a DFA $M$ that
+recognizes $L$ and a fooling set $F$ of size equal to the number of
+states of $M$.
+
+:::
+
+is minimal and also gives an alternate algorithm for minimizing finite
+automata. Compared to the one shown last week, this approach has the
+benefit that it finds A neat is neat about this approach compared to the
+one shown last week is
+
+(Optional, unassessed) See Section 3.10 of [Lecture Notes on
+Finite-State
+Machines](http://jeffe.cs.illinois.edu/teaching/algorithms/models/03-automata.pdf)
+for more details.
 
 [^1]: One main difference between these and my lecture notes is that I
     have tried to avoid proof by contradiction as much as possible as
