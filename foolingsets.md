@@ -269,8 +269,7 @@ the same resulting state (i.e. $q(x) \neq q(y)$).
 automata. To use it to show that certain DFA cannot recognize a language
 $L$, we will need the following definition.
 
-::: {prf:definition label=def-nonreg-suffix} Distinguishable pairs and
-distinguishing suffixes
+::: {prf:definition label=def-nonreg-suffix} Distinguishable pairs
 
 Let $L$ be a language and $x,y,z$ be strings. The string $z$ is said to
 be a *distinguishing suffix* of the pair $x,y$ if exactly one of $xz$
@@ -446,14 +445,15 @@ for the examples and exercises above.
 
 1.  Think about information that you need to keep track of to decide if
     a string should be accepted or rejected (see Lecture 17 slides for
-    examples)
-2.  Focus on a structured subset of strings (see Lecture 17 slides for
-    an example)
-3.  Construct fooling set using prefixes of strings in $L$.
-4.  To construct $F_k$, consider strings for which it seems a counter
+    examples).
+2.  Start with fooling sets of size 3.
+3.  Focus on a structured subset of strings (see Lecture 17 slides for
+    an example).
+4.  Construct fooling set using prefixes of strings in $L$.
+5.  To construct $F_k$, consider strings for which it seems a counter
     that can count up to at least $k$ is needed to distinguish between
     them.
-5.  Often, it is possible to construct a fooling set $F_k$ such that for
+6.  Often, it is possible to construct a fooling set $F_k$ such that for
     every string $x \in F_k$, there is a string $z$ such that $z$
     distinguishes $x$ from the other strings in $F_k$, i.e. either $xz$
     is in $L$ but $yz$ is not in $L$ for every other $y$ in $F_k$, or
