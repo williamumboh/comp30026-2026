@@ -537,16 +537,6 @@ states of $M$.
 
 :::
 
-is minimal and also gives an alternate algorithm for minimizing finite
-automata. Compared to the one shown last week, this approach has the
-benefit that it finds A neat is neat about this approach compared to the
-one shown last week is
-
-(Optional, unassessed) See Section 3.10 of [Lecture Notes on
-Finite-State
-Machines](http://jeffe.cs.illinois.edu/teaching/algorithms/models/03-automata.pdf)
-for more details.
-
 [^1]: One main difference between these and my lecture notes is that I
     have tried to avoid proof by contradiction as much as possible as
     students who have not encountered them before find them very
