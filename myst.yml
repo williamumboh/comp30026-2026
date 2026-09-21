@@ -8,6 +8,10 @@ project:
       affiliations:
         - institution: The University of Melbourne
   numbering:
+    title: true
+    heading_1 : true
+    heading_2 : true
+    heading_3 : true
     prf:proof : false
   toc:
     - file: welcome.md
