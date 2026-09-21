@@ -13,9 +13,14 @@ lecture.
 
 ::: {tip}
 
-You can hover over a linked definition, lemma or theorem and have it
-popup like [this](./hover-link-demo.mov). The search bar in the top
-right corner lets you search across all the notes.
+Some tips on using this website:
+
+- You can hover over a linked definition, lemma or theorem and have it
+  popup like [this](./hover-link-demo.mov).
+- The search bar in the top right corner lets you search across all the
+  notes.
+- You can export the markdown file for each lecture notes using the
+  download button at the top right corner of the notes.
 
 :::
 
@@ -34,6 +39,7 @@ demonstrations will not be captured on slides.
 | Lecture | Topics Covered (Topic Numbers, Slides) |
 |----|----|
 | Week 8 Lecture 2 | @sec-nonreg, @sec-nonreg-fooling, [Slides](./w8l2-slides.pdf) |
+| Week 9 Lecture 1 | @sec-nonreg-fooling, @sec-nonreg-closure, [Slides](./w9l1-slides.pdf) |
 
 # Resources
 

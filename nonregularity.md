@@ -25,4 +25,4 @@ recognises $L$?
 
 We begin with @sec-nonreg-fooling, and then we show how to use
 @sec-nonreg-closure properties to leverage the fact that some other
-language is already known to be nonregular (Week 9).
+language is already known to be nonregular.
