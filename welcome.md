@@ -36,10 +36,11 @@ demonstrations will not be captured on slides.
 
 # Lecture schedule
 
-| Lecture | Topics Covered (Topic Numbers, Slides) |
+| Lecture | Topics Covered, Slides |
 |----|----|
 | Week 8 Lecture 2 | @sec-nonreg, @sec-nonreg-fooling, [Slides](./w8l2-slides.pdf) |
 | Week 9 Lecture 1 | @sec-nonreg-fooling, @sec-nonreg-closure, [Slides](./w9l1-slides.pdf) |
+| Week 9 Lecture 2 | @sec-computable, @sec-intro-tm, [Slides](./w9l2-slides.pdf) |
 
 # Resources
 
