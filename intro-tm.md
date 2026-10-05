@@ -97,7 +97,7 @@ The TM processes $w$ as follows:
     - If $q = q_{rej}$, $M$ halts and rejects
     - Else:
       - let $(r,y,d) = \delta(q,x)$
-      - write $x$ to the cell under the tape head, move tape head in
+      - write $y$ to the cell under the tape head, move tape head in
         direction $d$, and move to state $r$
 
 ::: {note} Moving tape head to the left
