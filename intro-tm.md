@@ -114,7 +114,7 @@ moving it to the left keeps it at the start of the tape.
 We now explain in more detail exactly what a single step of computation
 in a Turing machine looks like.
 
-::: {prf:definition} TM Configuration
+::: {prf:definition label=def-tm-config} TM Configuration
 
 The *configuration* of a Turing machine $M$ on an input string $w$ is a
 snapshot of its execution at a point in time. In particular, the

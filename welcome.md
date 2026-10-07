@@ -38,9 +38,11 @@ demonstrations will not be captured on slides.
 
 | Lecture | Topics Covered, Slides |
 |----|----|
-| Week 8 Lecture 2 | @sec-nonreg, @sec-nonreg-fooling, [Slides](./w8l2-slides.pdf) |
-| Week 9 Lecture 1 | @sec-nonreg-fooling, @sec-nonreg-closure, [Slides](./w9l1-slides.pdf) |
-| Week 9 Lecture 2 | @sec-computable, @sec-intro-tm, [Slides](./w9l2-slides.pdf) |
+| Wk 8 Lecture 2 | @sec-nonreg, @sec-nonreg-fooling, [Slides](./w8l2-slides.pdf) |
+| Wk 9 Lecture 1 | @sec-nonreg-fooling, @sec-nonreg-closure, [Slides](./w9l1-slides.pdf) |
+| Wk 9 Lecture 2 | @sec-computable, @sec-intro-tm, [Slides](./w9l2-slides.pdf) |
+| Wk 10 Lecture 1 | @sec-tm-variants, @sec-alg-reg-cfl, [Slides](./w10l1-slides.pdf) |
+| Wk 10 Lecture 2 | @sec-limits, @sec-undecidability, [Slides](./w10l2-slides.pdf) |
 
 # Resources
 

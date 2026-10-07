@@ -23,6 +23,13 @@ project:
     - file: computable.md
       children:
         - file: intro-tm.md
+        - file: tm-variants.md
+        - file: alg-reg-cfl.md
+    - file: limits.md
+      children:
+        - file: tm-accept.md
+        - file: undecidability.md
+        - file: more-diagonalization.md
 
   # description:
   # keywords: []
