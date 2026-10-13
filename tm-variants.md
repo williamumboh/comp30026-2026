@@ -75,10 +75,11 @@ $w$ as follows:
 1.  Initially, define $i= 0$ and $\mathcal{C}_0$ to consist of the start
     configuration $q_0w$.
 2.  While $\mathcal{C}_i$ is not empty and does not contain $q_{acc}$:
-    1.  Initialize $\mathcal{C}_i$ to be the empty set
+    1.  Initialize $\mathcal{C}_{i+1}$ to be the empty set
     2.  For each configuration $C$ in $\mathcal{C}_i$ that is not in
         state $q_{rej}$, add the set of configurations that $C$ yields
         to $\mathcal{C}_{i+1}$
+    3.  Update $i = i+1$
 3.  If $\mathcal{C}_i$ is empty (all branches rejected), reject;
     otherwise, accept (some branch accepted)
 
