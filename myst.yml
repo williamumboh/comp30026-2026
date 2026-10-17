@@ -30,6 +30,7 @@ project:
         - file: tm-accept.md
         - file: undecidability.md
         - file: more-diagonalization.md
+        - file: tm-closure.md
 
   # description:
   # keywords: []
