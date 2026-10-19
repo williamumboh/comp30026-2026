@@ -285,6 +285,15 @@ cryptographic protocol, then a backdoor would be disastrous…
 
 :::
 
+::: {attention}
+
+Note that $L(M_1) = L(M_2)$ does not necessarily mean that $M_1$ and
+$M_2$ also rejects the same strings and does not halt on the same
+strings. In particular, if $M_1$ rejects all strings and $M_2$ loops on
+every string, then $L(M_1) = L(M_2) = \emptyset$.
+
+:::
+
 ::: {prf:theorem}
 
 $\EMPTYTM \leq \EQTM$.
