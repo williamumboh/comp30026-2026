@@ -1,3 +1,13 @@
+---
+authors:
+  - name: Peaker Guo
+    affiliations:
+      - Institute of Science Tokyo
+  - name: Seeun William Umboh
+    affiliations:
+      - University of Melbourne
+---
+
 (sec-tm-closure)=
 
 # Closure Properties
@@ -291,9 +301,10 @@ cases:
 
 1.  $M_1$ and $M_2$ reject $w$, in which case `M_intersection` also
     rejects,
-2.  at least one of $M_1$ and $M_2$ does not halt, in which case
-    `M_intersection` does not halt, but that is allowed: a recognizer
-    may loop on strings not in the language.
+2.  at least one of $M_1$ and $M_2$ does not halt (this includes the
+    case where one of them rejects and the other does not halt), in
+    which case `M_intersection` does not halt, but that is allowed: a
+    recognizer may loop on strings not in the language.
 
 :::::
 
@@ -345,10 +356,10 @@ def M_union(w):
     while True:
         if accepted(C_1) or accepted(C_2):
             return True
-        elif rejected(C_1) or rejected(C_2):
+        elif rejected(C_1) and rejected(C_2):
             return False
         else:   #Compute next configuration
-            C_1, C_2 = step_1(w), step_2(w)
+            C_1, C_2 = step_1(C_1), step_2(C_2)
 ```
 
 We now justify that this recognizes the union. If $M_1$ or $M_2$ accepts

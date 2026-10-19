@@ -44,7 +44,8 @@ demonstrations will not be captured on slides.
 | Wk 10 Lecture 1 | @sec-tm-variants, @sec-alg-reg-cfl, [Slides](./w10l1-slides.pdf) |
 | Wk 10 Lecture 2 | @sec-limits, @sec-undecidability, [Slides](./w10l2-slides.pdf) |
 | Wk 11 Lecture 1 | Canceled |
-| Wk 11 Lecture 2 | @sec-tm-closure, [Slides](./w11l2-slides.pdf) |
+| Wk 11 Lecture 2 | @sec-tm-closure, [Slides](./w11l2-slides.pdf) (Courtesy of Peaker Guo) |
+| Wk 12 Lecture 1 | @sec-tm-reductions, [Slides](./w12l1-slides.pdf) |
 
 # Resources
 
