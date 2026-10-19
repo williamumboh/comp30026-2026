@@ -31,6 +31,13 @@ project:
         - file: undecidability.md
         - file: more-diagonalization.md
         - file: tm-closure.md
+        - file: tm-reductions.md
+  math:
+    '\TM'   : '\mathrm{TM}'
+    '\ATM'  : 'A_{\TM}'
+    '\HALT' : '\mathrm{HALT}_{\TM}'
+    '\EMPTYTM' : '\mathrm{EMPTY}_{\TM}'
+    '\EQTM' : '\mathrm{EQ}_{\TM}'
 
   # description:
   # keywords: []

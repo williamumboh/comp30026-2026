@@ -33,7 +33,7 @@ languages since deciders always halt.
 
 ::: {note}
 
-A decider $M$ for $L$ always halts, so the call $M(w)$ always returns:
+A decider $M$ for $L$ always halts, so the call `M(w)` always returns:
 `True` if $w \in L$ and `False` if $w \notin L$.
 
 :::
@@ -237,7 +237,7 @@ Let $M$ be a decider for $L$. Recall that $L^c$ is the set of all
 strings that are not in $L$. We run $M$ on $w$ and flip its answer:
 
 ``` python
-def M_complement(w, M):
+def M_complement(w):
     return not M(w)
 ```
 
@@ -455,8 +455,8 @@ recognizable. We use the TM Acceptance language $A_{\mathrm{TM}}$.
 
 Recall that
 $$A_{\mathrm{TM}} = \{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w\}.$$
-In words, $A_{\mathrm{TM}}$ asks: given a TM $M$ and a string $w$, does
-$M$ accept $w$?
+In words, $A_{\mathrm{TM}}$ asks: given an encoding of a TM $M$ and a
+string $w$, does $M$ accept $w$?
 
 We have previously shown this language to be
 [recognizable](#thm-tm-accept-recognizable) but
