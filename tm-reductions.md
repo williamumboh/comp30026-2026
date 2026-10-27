@@ -190,12 +190,25 @@ the function call `M(w)` either returns `False` or never returns.
 
 ::: {note} Application
 
-Why do we care about TM Emptiness? Suppose we want to know if an LLM `M`
-can never be prompted into outputting a biological weapon. We can define
-a new function `T` that on input `w`, feeds it to `M`, and if the output
-`M(w)` is a biological weapon, returns `True`. If `T(w)` does not return
-`True` for every string `w`, then we know that there is no prompt that
-will cause `M` to output a biological weapon.
+Why do we care about TM Emptiness? Suppose we want to know if an LLM can
+never be prompted into outputting a biological weapon. We can define a
+new function `IsPromptSafe` that on input `w`, feeds it to the LLM, and
+if the output is a biological weapon, returns `True`. If
+`IsPromptSafe(w)` does not return `True` for every string `w`, then we
+know that there is no prompt that will cause the LLM to output a
+biological weapon.
+
+Here's the Python equivalent:
+
+``` python
+def IsPromptSafe(prompt):
+    output = LLM(prompt)
+    return IsBiologicalWeapon(output)
+```
+
+where `LLM()` is a function that sends a prompt to the LLM we are
+testing, and returns the LLM's output and `IsBiologicalWeapon()` is a
+function that returns `True` if the input is a biological weapon.
 
 :::
 
